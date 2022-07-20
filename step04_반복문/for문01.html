@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -50,57 +49,4 @@
     </script>
 </body>
 
-=======
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>반복문01 - for문 01</title>
-</head>
-
-<body>
-
-    <script>
-        const UL = document.querySelector('#list');
-        console.log(UL);
-
-        const LI = document.querySelectorAll('#list li');
-        console.log(LI);
-
-        for (let t = 0; t < LI.length; t++) {
-            LI[t].style.color = 'red';
-        }
-
-        LI.forEach(el => el.style.color = 'blue');
-
-        // UL.addEventListener('click', function () {
-        //     console.log(this)
-        //});
-
-        // $('#list li').on('click', function () {
-        //   $('#list li').css({ color: 'blue' });
-        //   $(this).css({ color: 'yellow' })
-        //})
-
-
-
-        const NUM = document.querySelector('#num');
-        const 자료 = ['하나', '둘', '셋', '넷'];
-
-        LI.forEach((el, idx) => {
-            el.addEventListener('click', function () {
-                LI.forEach(el => el.style.color = 'blue');
-                el.style.color = 'yellow';
-                NUM.innerText = 자료[idx];
-            })
-
-        });
-
-    </script>
-</body>
-
->>>>>>> 56c6c510d559e4f2d3f2fe29105c39d2f11430a0
 </html>
