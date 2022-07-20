@@ -1,41 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>객체 04 - 객체 생성자함수</title>
-</head>
-
-<body>
-    <script>
-        //1.객체를 찍어내는 기계를 만드는 옛날 방법.class로 바뀜.
-        function Kim(name) {
-            this.name = name;
-            this.showName = function () {
-                console.log(this.name)
-            }
-
-        }
-
-        //인스터스란 무엇인가?
-
-        const 김우진 = new Kim('김우진');
-        김우진.showName();
-
-        const 황민현 = new Kim('여우');
-        황민현.showName();
-
-        Kim.prototype.group = '냉모밀먹고싶당';
-
-        console.log(황민현.group);
-        console.log(김우진.group);
-    </script>
-</body>
-
-=======
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -70,5 +32,4 @@
     </script>
 </body>
 
->>>>>>> 56c6c510d559e4f2d3f2fe29105c39d2f11430a0
 </html>
